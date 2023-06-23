@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----- helper css here ----*/
+:root {
+    --color-black: #000000;
+    --color-dark: #333333;
+    --color-dark-3: #86878b;
+    --color-dark-2: #212121;
+    --color-white: #fff;
+    --color-white-2: #f5f5f5;
+    --color-white-3: #bdbdbd;
+    --color-white-4: #cccccc;
+    --color-orange: #ff9b51;
+
+}
+.pos-rel {
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+a:active,
+a:hover,
+a:visited,
+a:focus,
+a:link {
+    text-decoration: none;
+}
+.main-heading {
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: var(--color-white);
+    margin-bottom: 4rem;
+}
+
+.para {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--color-white);
+    margin-bottom: 4.5rem;
+}
+
+.button {
+    border: 2px solid var(--color-white);
+    padding: 1.2rem 3rem;
+    font-size: 1.5rem;
+    color: var(--color-white);
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-block;
+    transition: all 0.7s ease-in-out;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+.para2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-dark-3);
+
+}
+
+.sec-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+.circle {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid var(--color-orange);
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-orange);
+}
+
+
+/*----- header css here ----*/
+
+header .axNav {
+    background-color: var(--color-black);
+    margin-bottom: 11rem;
+}
+
+.axNav .navbar-brand {
+    height: 70px;
+    padding: 21px 15px;
+}
+.axNav .navbar-toggle,
+.axNav .navbar-toggle:active,
+.axNav .navbar-toggle:focus {
+    margin-top: 17px;
+    border: 1px solid var(--color-white);
+}
+.axNav .navbar-toggle .icon-bar{
+    background-color: var(--color-white);
+}
+.axNav .navbar-nav>li>a {
+    padding: 0 1.5rem;
+    font-size: 1.4rem;
+    color: var(--color-white);
+    font-weight: 600;
+    line-height: 7rem;
+    transition: all 0.7s ease-in-out;
+}
+
+.axNav .nav li a:focus,
+.axNav .nav li a:hover {
+    text-decoration: none;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transform: scaleX(1.1);
+}
+
+header .navbar {
+    border: none;
+}
+
+header {
+    background-image: -webkit-linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(../images/bgimage-1.jpg);
+    padding: 0 0 14rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+
+.panel-info h2 {
+    margin-bottom: 3.2rem;
+}
+
+.panel-info hr {
+    width: 6.5rem;
+    height: 0.3rem !important;
+    color: var(--color-white);
+    background-color: var(--color-white);
+    border: none;
+    margin-bottom: 4rem;
+}
+
+
+
+.trialForm {
+    width: 65%;
+    margin: auto 0 auto auto;
+}
+
+.trialForm li , .trialForm li a{
+    padding: 2rem 1rem;
+    border: none;
+}
+
+.trialForm li:first-child {
+    background-color: var(--color-white-2);
+    color: var(--color-dark);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.trialForm span {
+    color: var(--color-orange);
+}
+
+.trialForm li:last-child{
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.trialForm li:last-child a{
+    color: var(--color-white);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.trialForm li:last-child:hover a{
+    color: var(--color-black);
+}
+
+.trialForm input {
+    border: none;
+    border-bottom: 1px solid var(--color-white-3);
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/*------------------ social connect css stars here--------------*/
+
+.sociConnect {
+    padding: 2.3rem 0;
+    background-color: var(--color-white);
+    border-bottom: 2px solid var(--color-white-3);
+    box-shadow: 1px 1px 1px var(--color-dark-3);
+}
+
+.soci-heading h4 {
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+
+.sociConnect a i {
+    color: var(--color-white-4);
+    margin: 0.3rem 1.5rem 0 0;
+
+
+}
+
+.sociConnect .para2 {
+    margin-bottom: 0;
+}
+
+/*------------------ features css stars here--------------*/
+
+.firstFeature {
+    padding: 12rem 0;
+    background-color: var(--color-white-2);
+}
+
+.firstFeature .btn-group-vertical :last-child {
+    margin-bottom: 0;
+}
+
+.firstFeature .btn-group-vertical .button {
+    border: none;
+    padding: 5rem 3.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    margin-bottom: 1px;
+}
+
+.firstFeature .btn-group-vertical .button:hover,
+.firstFeature .btn-group-vertical .button:focus,
+.firstFeature .btn-group-vertical .button:active {
+    background-color: var(--color-orange);
+}
+
+.firstFeature .para2,
+.secondFeature .para2,
+.thirdFeature .para2 {
+    margin-bottom: 2.5rem;
+}
+
+.mb-8 {
+    margin-bottom: 8rem;
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
+}
+
+.firstFearure-info .button, .contactForm .button {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    border-radius: 5px;
+}
+
+.firstFearure-info .button:hover,
+.firstFearure-info .button:active,
+.firstFearure-info .button:focus,
+.contactForm .button:hover,
+.contactForm .button:active,
+.contactForm .button:focus {
+    background-color: var(--color-white);
+    color: var(--color-orange);
+    border: 2px solid var(--color-orange);
+}
+
+.firstFeature-img {
+    padding: 5rem 0;
+
+}
+
+.secondFeature {
+    padding: 10rem 0;
+    background-color: var(--color-white);
+}
+
+
+.thirdFeature {
+    padding: 10rem 0;
+    background-color: var(--color-white-2);
+}
+
+.thirdFeature .sec-heading,
+.secondFeature .sec-heading {
+    margin-bottom: 3rem;
+}
+
+.thirdFeature hr,
+.secondFeature hr {
+    background-color: var(--color-orange);
+    height: 2px;
+    width: 6.5rem;
+    margin-bottom: 3rem;
+}
+
+/*------------------ process  css stars here--------------*/
+
+.process {
+    padding: 10rem 0;
+    background-color: var(--color-white);
+}
+
+.process .main-heading,
+.pricing .main-heading,
+.testimonials .main-heading,
+.contactForm .main-heading {
+    color: var(--color-dark-2);
+    margin-bottom: 3rem;
+}
+
+.process hr,
+.pricing hr,
+.testimonials hr,
+.contactForm hr {
+    height: 2px;
+    background-color: var(--color-orange);
+    width: 6.5rem;
+    margin: 0 auto 3rem;
+}
+
+.process .circle {
+    width: 7rem;
+    height: 7rem;
+    margin: 0 auto;
+    border: 2px solid var(--color-orange);
+}
+
+.process .sec-heading {
+    margin-bottom: 3rem;
+}
+
+.process .thumbnail {
+    border: none;
+}
+
+.process .para2 {
+    margin-bottom: 0;
+}
+
+/*------------------ pricing  css stars here--------------*/
+
+.pricing {
+    padding: 10rem 0;
+    background-color: var(--color-white-2);
+}
+.pricing .list-group{
+    margin-bottom: 0;
+}
+
+.pricingSlot ul li:first-child {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-size: 2rem;
+    padding: 2rem 0;
+    font-weight: 700;
+    border-bottom: 2px solid var(--color-white);
+}
+
+.pricingSlot ul li:nth-child(2) {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 2rem 0;
+    font-weight: 700;
+    border-bottom: 5px solid var(--color-orange);
+}
+
+.pricingSlot ul li:nth-child(2) h4 {
+    font-size: 9.4rem;
+}
+
+.pricingSlot ul li:nth-child(2) h4 span {
+    font-size: 3.5rem;
+}
+
+.pricingSlot .para2 {
+    text-transform: uppercase;
+}
+
+.slot-2 li:nth-child(2) {
+    border-bottom: 0px !important;
+}
+
+.slot-2 li:nth-child(3) {
+    background-color: var(--color-orange);
+    color: var(--color-white) !important;
+}
+
+.slot-2 li:nth-child(3) .para2 {
+    color: var(--color-white) !important;
+    font-weight: 700;
+}
+.slot-1, .slot-3{
+  margin-top:4.6rem ;
+}
+
+/*------------------ testimonials  css stars here--------------*/
+
+.testimonials{
+    padding: 10rem 0;
+    background-color: var(--color-white);
+}
+.comment .para2{
+    background-color: var(--color-white-2);
+    padding:2.5rem 1rem;
+    position: relative;
+    border-radius: 2px;
+}
+
+.comment .para2::after{
+    content: "";
+    position: absolute;
+    bottom: -2rem;
+    left: 2rem;
+    border-top: 2rem solid var(--color-white-2);
+    border-right: 1.5rem solid transparent;
+    border-left: 1.5rem solid transparent;
+    border-bottom: none;
+
+}
+.user{
+    margin: 2rem 0 0 2rem;
+}
+.user h5{
+    margin-bottom: 0 !important;
+}
+
+/*------------------ custom  css stars here--------------*/
+
+.custom{
+    background-image: -webkit-linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(../images/bg2.jpg);
+    padding: 7rem 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.custom hr{
+    width: 6.5rem;
+    height: 2px !important;
+    color: var(--color-white);
+    background-color: var(--color-white);
+    margin: 0 auto 3rem;
+}
+.custom .para2{
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--color-white);
+    margin-bottom: 3.5rem;
+}
+
+/*------------------ contact  css stars here--------------*/
+
+.contactForm{
+    padding: 10rem 0 8rem;
+    background-color: var(--color-white);
+}
+.contactForm .form-control {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid var(--color-white-3);
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow:none;
+    margin-bottom: 4rem;
+}
+
+/*------------------ footer  css stars here--------------*/
+
+footer{
+    padding: 2rem 0;
+    background-color: var(--color-black);
+}
+footer li a i, footer a,footer a:link,footer a:visited{
+    color: var(--color-white);
+    margin:0 0.5rem;
+}
+
+/*------------------ small screen media query  css stars here--------------*/
+
+@media all and (max-width:992px){
+    .trialForm {
+        width: 95%;
+
+    }
+    .sociConnect a i {
+        margin: 2rem 1rem 0 0;
+    font-size: 4rem;
+    
+    }
+}
+
+/*------------------ extra small screen media query  css stars here--------------*/
+
+@media all and (max-width:768px){
+    .axNav .navbar-nav>li>a {       
+        line-height: 3rem;     
+    }
+    header {
+        padding: 0 0 4rem;
+    }
+    header .axNav {
+        margin-bottom: 4rem;
+    }
+    .panel-info, .sociConnect, .sociConnect ul,.firstFeature,.secondFeature,.thirdFeature{
+        text-align: center;
+    }
+    .panel-info hr,.thirdFeature hr, .secondFeature hr,.process hr, .pricing hr, .testimonials hr, .contactForm hr{
+        margin:0 auto 2rem ;
+    }
+    .panel-info h2,.main-heading, .para,.sec-heading, .para2, .mb-5,.thirdFeature .sec-heading, .secondFeature .sec-heading
+    ,.process .main-heading, .pricing .main-heading, .testimonials .main-heading, .contactForm .main-heading, .mb-8,
+    .process .sec-heading,.custom hr,.custom .para2 {
+        margin-bottom:2rem;
+    }
+    .sociConnect a i {
+        font-size: 3rem;
+    
+    }
+    .firstFeature, .secondFeature,.thirdFeature,.process,.pricing,.testimonials,.custom,.contactForm{
+        padding: 4rem 0;
+    }
+    .firstFeature-img {
+        padding: 2rem 0;
+    }
+    .slot-1, .slot-2, .slot-3, .trialForm {
+        margin: 3rem auto 0;
+        width: 80%;
+    }
+}
